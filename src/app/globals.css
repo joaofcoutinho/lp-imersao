@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #011f33;
+  --accent: #aa8750;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #011f33;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle dot grid pattern for hero */
+.hero-grid {
+  background-image: radial-gradient(
+    circle,
+    rgba(170, 135, 80, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+}
+
+/* Gold gradient text */
+.gold-text {
+  background: linear-gradient(135deg, #aa8750 0%, #c4a46e 50%, #aa8750 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Accent line divider */
+.divider-accent {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #aa8750 30%,
+    #aa8750 70%,
+    transparent
+  );
+}
+
+/* Card hover glow */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(170, 135, 80, 0.12);
+  border-color: rgba(170, 135, 80, 0.4);
+}
+
+/* CTA button pulse ring */
+@keyframes ring-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(170, 135, 80, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(170, 135, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(170, 135, 80, 0);
+  }
+}
+.btn-pulse {
+  animation: ring-pulse 2.5s ease-out infinite;
+}
+
+/* Fade in up animation with delay utilities */
+.animate-delay-100 {
+  animation-delay: 100ms;
+  opacity: 0;
+}
+.animate-delay-200 {
+  animation-delay: 200ms;
+  opacity: 0;
+}
+.animate-delay-300 {
+  animation-delay: 300ms;
+  opacity: 0;
+}
+.animate-delay-400 {
+  animation-delay: 400ms;
+  opacity: 0;
+}
+.animate-delay-500 {
+  animation-delay: 500ms;
+  opacity: 0;
+}
+.animate-delay-600 {
+  animation-delay: 600ms;
+  opacity: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #011f33;
+}
+::-webkit-scrollbar-thumb {
+  background: #aa8750;
+  border-radius: 3px;
+}
