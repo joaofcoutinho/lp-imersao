@@ -101,8 +101,16 @@ export default function Mentors() {
           ))}
         </div>
 
+        {/* Mais mentores */}
+        <div className="mt-6 border border-white/10 bg-white/[0.03] py-6 text-center relative overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
+          <p className="text-white font-black text-2xl sm:text-3xl">
+            <span className="gold-text">+5</span> mentores ainda serão anunciados!
+          </p>
+        </div>
+
         {/* CTA beneath mentors */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-10">
           <a
             href="#inscricao"
             className="inline-flex items-center bg-transparent border border-accent/50 hover:bg-accent hover:border-accent text-accent hover:text-primary font-bold text-sm px-8 py-3.5 tracking-wider uppercase transition-all duration-200"

@@ -161,11 +161,10 @@ export default function Modules() {
         </p>
 
         {/* Stats bar */}
-        <div className="mt-10 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/8">
+        <div className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/8">
           {[
             { value: "13", label: "Módulos" },
             { value: "2",  label: "Dias intensos" },
-            { value: "5",  label: "Mentores" },
             { value: "100%", label: "Presencial" },
           ].map((s, i) => (
             <div key={i} className="bg-primary-card p-5 sm:p-6 text-center">
