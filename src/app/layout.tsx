@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Imersão Protagonistas de Resultados – Vitória 2026 | Enjoy",
   description:
-    "Desbloqueie seu potencial máximo na Imersão Protagonistas de Resultados – Vitória 2026, com o apoio estratégico da Enjoy. 24 e 25 de Março de 2026. Presencial, All Inclusive.",
+    "Desbloqueie seu potencial máximo na Imersão Protagonistas de Resultados – Vitória 2026, um evento da CNP com a Enjoy. 24 e 25 de Março de 2026. Presencial, All Inclusive.",
   keywords: [
     "imersão liderança",
     "protagonistas de resultados",

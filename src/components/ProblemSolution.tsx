@@ -70,11 +70,8 @@ export default function ProblemSolution() {
           <div>
             <p className="text-white font-semibold text-base sm:text-lg leading-relaxed">
               A{" "}
-              <span className="text-accent font-bold">
-                Imersão Protagonistas de Resultados
-              </span>
-              , com o apoio da{" "}
-              <span className="text-accent font-bold">Enjoy</span>, oferece um
+              <span className="text-accent font-bold">Enjoy</span> e a{" "}
+              <span className="text-accent font-bold">CNP</span>, oferecem um
               caminho claro para líderes que querem ir além e construir
               empresas que geram resultados consistentes e sustentáveis.
             </p>

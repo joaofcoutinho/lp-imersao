@@ -80,11 +80,9 @@ export default function FinalCTA() {
 
         {/* Sub */}
         <p className="text-white/60 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-12">
-          A oportunidade de transformar sua gestão com o apoio da{" "}
-          <span className="text-accent font-semibold">Enjoy</span> e dos{" "}
-          <span className="text-white font-semibold">
-            Protagonistas de Resultados
-          </span>{" "}
+          A oportunidade de transformar sua gestão com a{" "}
+          <span className="text-accent font-semibold">Enjoy</span> e a{" "}
+          <span className="text-white font-semibold">CNP</span>{" "}
           é única. Garanta seu lugar em Vitória e construa o legado que sua
           empresa merece.
         </p>

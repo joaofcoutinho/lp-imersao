@@ -2,11 +2,70 @@ import Image from "next/image";
 
 const mentors = [
   {
-    name: "Marcela Zaidem",
-    role: "Cultura Organizacional e Gestão de Pessoas",
+    name: "Maurilio Nunes",
+    role: "Ex-Comandante do BOPE",
     highlight:
-      "Transforma ambientes corporativos em máquinas de resultados. Especialista em cultura como alavanca estratégica.",
-    photo: "/images/mentors/marcela.png",
+      "Formado em Direito pela Universidade Gama Filho, tem MBA em Gerenciamento de Projetos e Mestrado Executivo em Gestão Empresarial, ambos pela FGV.",
+    photo: "/images/mentors/maurilio-nunes.png",
+  },
+  {
+    name: "Julian Tonioli",
+    role: "Partner Auddas",
+    highlight:
+      "Sócio da Auddas, Operating Partnership Company. Atua em modelo de cogestão focado em execução, com atuação baseada nos pilares de Governança, Gestão e Capital.",
+    photo: "/images/mentors/julian-tonioli.png",
+  },
+  {
+    name: "Yago Martins",
+    role: "Viver de IA",
+    highlight:
+      "CEO e Co-founder do Viver de IA, Mentor no G4 Educação. Ganhou o Prêmio Growth Awards de Founder do ano em 2024. Construindo o maior ecossistema de IA para empresários do Brasil.",
+    photo: "/images/mentors/yagomartins.jpg",
+    photoPosition: "center 20%",
+  },
+  {
+    name: "Marcela Zaidem",
+    role: "Founder CNP People Solutions",
+    highlight:
+      "Especialista em Gestão de Pessoas, cultura e liderança. Fundadora da Cultura na Prática e ex-sócia do G4 Educação, onde atuou na geração de mais de 600 mil empregos.",
+    photo: "/images/mentors/marcelazaidem.jpg",
+    photoPosition: "center 20%",
+  },
+  {
+    name: "Alan Wilckay Jr.",
+    role: "Founder Skeps",
+    highlight:
+      "Referência em estratégias conversacionais que conectam marcas e clientes. Lidera projetos que impactam mais de 20 milhões de usuários por mês.",
+    photo: "/images/mentors/alan.jpg",
+    photoPosition: "center 20%",
+  },
+  {
+    name: "Rafael Milagre",
+    role: "Viver de IA",
+    highlight:
+      "CEO e Co-founder do Viver de IA, Mentor no G4 Educação. Ganhou o Prêmio Growth Awards de Founder do ano em 2024. Construindo o maior ecossistema de IA para empresários do Brasil.",
+    photo: "/images/mentors/rafaelmialgre.jpg",
+  },
+  {
+    name: "Daniel Moreira",
+    role: "Founder & CEO Hub4Pay",
+    highlight:
+      "Fundador e CEO da Hub4pay, fintech especializada em marketing de incentivo e premiações digitais. Sob sua liderança, a Hub4pay já distribuiu mais de R$ 1 bilhão em recompensas.",
+    photo: "/images/mentors/daniel-moreira.png",
+  },
+  {
+    name: "Marcela Bello",
+    role: "Founder 4C Digital",
+    highlight:
+      "Especialista em Crédito, Cobrança e automação de operações. Cofundadora da 4C Digital, com faturamento anual de R$ 10 milhões e mais de 30 milhões de disparos mensais.",
+    photo: "/images/mentors/marcelabella.jpg",
+  },
+  {
+    name: "Lucas Ferraz",
+    role: "CEO e cofundador da Faz Capital",
+    highlight:
+      "CEO e cofundador da Faz Capital, credenciado à XP Investimentos. A empresa administra mais de R$ 8 bilhões sob custódia e atende mais de 13 mil clientes.",
+    photo: "/images/mentors/lucas-ferraz.png",
   },
   {
     name: "Wander Miranda",
@@ -38,17 +97,35 @@ const mentors = [
   },
 ];
 
-function MentorCard({ mentor: m }: { mentor: typeof mentors[0] }) {
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .filter((_, i, arr) => i === 0 || i === arr.length - 1)
+    .map((w) => w[0])
+    .join("")
+    .toUpperCase();
+}
+
+function MentorCard({ mentor: m }: { mentor: (typeof mentors)[0] }) {
   return (
     <div className="card-hover bg-primary-card border border-white/8 overflow-hidden flex flex-col">
       {/* Foto */}
       <div className="relative w-full aspect-[4/3] overflow-hidden bg-primary-light">
-        <Image
-          src={m.photo}
-          alt={m.name}
-          fill
-          className="object-cover object-top transition-transform duration-500 hover:scale-105"
-        />
+        {m.photo ? (
+          <Image
+            src={m.photo}
+            alt={m.name}
+            fill
+            style={{ objectPosition: m.photoPosition || "center top" }}
+            className="object-cover transition-transform duration-500 hover:scale-105"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary-light to-primary-card">
+            <span className="text-4xl font-black gold-text">
+              {getInitials(m.name)}
+            </span>
+          </div>
+        )}
         <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-primary-card to-transparent" />
       </div>
       {/* Info */}
@@ -58,7 +135,9 @@ function MentorCard({ mentor: m }: { mentor: typeof mentors[0] }) {
           {m.role}
         </p>
         <div className="w-8 h-px bg-accent/40 mb-4" />
-        <p className="text-white/55 text-sm leading-relaxed flex-1">{m.highlight}</p>
+        <p className="text-white/55 text-sm leading-relaxed flex-1">
+          {m.highlight}
+        </p>
       </div>
     </div>
   );
@@ -87,26 +166,11 @@ export default function Mentors() {
           </p>
         </div>
 
-        {/* Linha 1 — 3 mentores */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-          {mentors.slice(0, 3).map((m, i) => (
+        {/* Grid de mentores — 3 por linha */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {mentors.map((m, i) => (
             <MentorCard key={i} mentor={m} />
           ))}
-        </div>
-
-        {/* Linha 2 — 2 mentores centralizados */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:w-2/3 lg:mx-auto">
-          {mentors.slice(3).map((m, i) => (
-            <MentorCard key={i} mentor={m} />
-          ))}
-        </div>
-
-        {/* Mais mentores */}
-        <div className="mt-6 border border-white/10 bg-white/[0.03] py-6 text-center relative overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
-          <p className="text-white font-black text-2xl sm:text-3xl">
-            <span className="gold-text">+5</span> mentores ainda serão anunciados!
-          </p>
         </div>
 
         {/* CTA beneath mentors */}

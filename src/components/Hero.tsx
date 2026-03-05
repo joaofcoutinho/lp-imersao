@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 px-4 py-1.5 mb-8">
               <Star size={11} className="text-accent fill-accent" />
               <span className="text-accent text-xs font-semibold tracking-widest uppercase">
-                Apoio Oficial Enjoy · Vitória 2026
+                Um evento de: Enjoy e CNP
               </span>
               <Star size={11} className="text-accent fill-accent" />
             </div>
@@ -35,9 +35,9 @@ export default function Hero() {
               <span className="gold-text">Enjoy</span> e Protagonistas
               <br />de Resultados:
               <span className="block mt-2 text-white/95">
-                Sua Liderança
+                Sua Liderança Transformada
               </span>
-              <span className="block gold-text">Transforma em Vitória.</span>
+              <span className="block gold-text">em Performance.</span>
             </h1>
 
             {/* Sub-headline */}
@@ -46,9 +46,9 @@ export default function Hero() {
               <span className="text-white font-semibold">
                 Imersão Protagonistas de Resultados — Vitória 2026
               </span>
-              , evento da{" "}
-              <span className="text-accent font-semibold">Marcela Zaidem</span>{" "}
-              com o apoio estratégico da{" "}
+              , um evento da{" "}
+              <span className="text-accent font-semibold">CNP</span>{" "}
+              com a{" "}
               <span className="text-accent font-semibold">Enjoy</span>.
             </p>
 

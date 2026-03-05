@@ -43,15 +43,6 @@ export default function EnjoyPartnership() {
               <br />
               Resultados.
             </h2>
-            <p className="text-white/60 text-base leading-relaxed mb-6">
-              A{" "}
-              <span className="text-accent font-semibold">Enjoy</span> é
-              apoiadora oficial da{" "}
-              <span className="text-white font-semibold">
-                Imersão Protagonistas de Resultados — Vitória 2026
-              </span>
-              . Nossa parceria visa fortalecer a liderança e a gestão eficaz.
-            </p>
             <p className="text-white/60 text-base leading-relaxed mb-8">
               Ao participar através da Enjoy, você acessa conteúdo de ponta e
               uma rede de valor exclusiva que vai muito além do evento.
