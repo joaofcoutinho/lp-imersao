@@ -9,13 +9,6 @@ const mentors = [
     photo: "/images/mentors/maurilio-nunes.png",
   },
   {
-    name: "Julian Tonioli",
-    role: "Partner Auddas",
-    highlight:
-      "Sócio da Auddas, Operating Partnership Company. Atua em modelo de cogestão focado em execução, com atuação baseada nos pilares de Governança, Gestão e Capital.",
-    photo: "/images/mentors/julian-tonioli.png",
-  },
-  {
     name: "Yago Martins",
     role: "Viver de IA",
     highlight:
@@ -61,13 +54,6 @@ const mentors = [
     photo: "/images/mentors/marcelabella.jpg",
   },
   {
-    name: "Lucas Ferraz",
-    role: "CEO e cofundador da Faz Capital",
-    highlight:
-      "CEO e cofundador da Faz Capital, credenciado à XP Investimentos. A empresa administra mais de R$ 8 bilhões sob custódia e atende mais de 13 mil clientes.",
-    photo: "/images/mentors/lucas-ferraz.png",
-  },
-  {
     name: "Wander Miranda",
     role: "Crescimento em Vendas",
     highlight:
@@ -87,6 +73,13 @@ const mentors = [
     highlight:
       "Como ele escalou a operação da Prudential no ES, atingindo uma receita de R$ 30 milhões.",
     photo: "/images/mentors/vitor-escocard.png",
+  },
+  {
+    name: "Isabella Cruz",
+    role: "Founder Clínica IC",
+    highlight:
+      "Médica focada em Longevidade Saudável, emagrecimento com saúde e alta performance. Equilíbrio, disciplina e constância para resultados sustentáveis. Saúde é estratégia de liderança.",
+    photo: "/images/mentors/isabela.jpeg",
   },
   {
     name: "Felipe Lomeu",
