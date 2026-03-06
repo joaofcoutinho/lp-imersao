@@ -60,7 +60,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="flex items-center gap-3">
             <a
-              href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA" target="_blank" rel="noopener noreferrer"
+              href="#inscricao"
               className="hidden sm:inline-flex items-center bg-accent hover:bg-accent-light text-primary font-bold text-sm px-5 py-2.5 transition-all duration-200 tracking-wider uppercase"
             >
               Garantir Vaga
@@ -91,7 +91,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA" target="_blank" rel="noopener noreferrer"
+              href="#inscricao"
               onClick={() => setMobileOpen(false)}
               className="mt-3 inline-flex justify-center bg-accent text-primary font-bold text-sm px-5 py-3 tracking-wider uppercase"
             >

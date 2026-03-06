@@ -110,7 +110,7 @@ export default function FinalCTA() {
         {/* Main CTA */}
         <div className="flex flex-col items-center gap-4">
           <a
-            href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA"
+            href="https://culturanapratica.com.br/imersao-vitoria-2026/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-pulse w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-light text-primary font-black text-sm sm:text-base px-10 py-5 tracking-wider uppercase transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:shadow-accent/25"

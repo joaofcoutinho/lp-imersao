@@ -169,7 +169,7 @@ export default function Mentors() {
         {/* CTA beneath mentors */}
         <div className="text-center mt-10">
           <a
-            href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA" target="_blank" rel="noopener noreferrer"
+            href="#inscricao"
             className="inline-flex items-center bg-transparent border border-accent/50 hover:bg-accent hover:border-accent text-accent hover:text-primary font-bold text-sm px-8 py-3.5 tracking-wider uppercase transition-all duration-200"
           >
             Aprender com esses mentores

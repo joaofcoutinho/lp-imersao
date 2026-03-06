@@ -55,7 +55,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 mb-10 w-full sm:w-auto items-center lg:items-start">
               <a
-                href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA" target="_blank" rel="noopener noreferrer"
+                href="#inscricao"
                 className="btn-pulse inline-flex items-center justify-center bg-accent hover:bg-accent-light text-primary font-black text-sm px-7 py-4 tracking-wider uppercase transition-all duration-200 hover:scale-105"
               >
                 Garantir Minha Vaga pela Enjoy
