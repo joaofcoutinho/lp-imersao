@@ -115,7 +115,7 @@ export default function FAQ() {
             Ainda tem dúvidas? Fale diretamente com a equipe Enjoy.
           </p>
           <a
-            href="#inscricao"
+            href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center text-accent font-semibold text-sm hover:text-accent-light transition-colors border-b border-accent/40 hover:border-accent-light pb-0.5"
           >
             Entrar em contato →
