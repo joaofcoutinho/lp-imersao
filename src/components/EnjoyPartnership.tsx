@@ -49,7 +49,7 @@ export default function EnjoyPartnership() {
             </p>
 
             <a
-              href="#inscricao"
+              href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center bg-accent hover:bg-accent-light text-primary font-black text-sm px-7 py-3.5 tracking-wider uppercase transition-all duration-200 hover:scale-105"
             >
               Quero participar pela Enjoy

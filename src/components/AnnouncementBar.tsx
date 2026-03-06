@@ -16,7 +16,7 @@ export default function AnnouncementBar() {
           <span className="hidden sm:inline">Presencial e All Inclusive</span>
         </p>
         <a
-          href="#inscricao"
+          href="https://sceql.share.hsforms.com/2UvLviZIHT8mazku1p-z2GA" target="_blank" rel="noopener noreferrer"
           className="hidden sm:inline-flex items-center gap-1 bg-primary/15 hover:bg-primary/25 text-primary font-black text-xs px-3 py-1 tracking-wider uppercase transition-colors flex-shrink-0"
         >
           Garantir vaga <ArrowRight size={11} />
