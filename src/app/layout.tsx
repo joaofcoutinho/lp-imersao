@@ -49,7 +49,15 @@ export default function RootLayout({
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1507018507938417');
+            fbq('init', '2152149405189482');
             fbq('track', 'PageView');
+
+            document.addEventListener('click', function(e) {
+              var link = e.target.closest('a[href*="hsforms.com"]');
+              if (link) {
+                fbq('trackSingle', '2152149405189482', 'Lead');
+              }
+            });
           `}
         </Script>
         <noscript>
